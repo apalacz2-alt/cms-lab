@@ -1,10 +1,11 @@
+# docker-compose.yml – WordPress + MariaDB (GitHub Codespaces)
 services:
   db:
     image: mariadb:11
     environment:
       MARIADB_DATABASE: wordpress
       MARIADB_USER: wp
-      MARIADB_PASSWORD: adpa
+      MARIADB_PASSWORD: wp_haslo # TODO: zmień (tylko lab
       MARIADB_ROOT_PASSWORD: root_haslo
     volumes:
       - db_data:/var/lib/mysql
